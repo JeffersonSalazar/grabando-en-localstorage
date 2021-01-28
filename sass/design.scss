@@ -1,0 +1,85 @@
+// Formateo del documento
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Estilos generales de los botones
+button {
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    margin: 0 20px;
+    box-shadow: 0 12px 20px 0px rgb(172, 168, 168);
+    cursor: pointer;
+}
+
+// ----------------------------------------------------
+main {
+    padding: 50px 0;
+
+    // Contenedor lienzo
+    .sect-lienzo {
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        line-height: 200px;
+        margin: 0 auto;
+        letter-spacing: 2px;
+        color: white;
+        font-size: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 0 5px 20px 0px rgb(172, 168, 168);
+        
+        @media (min-width: 720px) {
+            width: 600px;
+        }
+
+        &.bg-white {
+            background-color: white;
+        }
+        &.bg-sky {
+            background-color: dodgerblue;
+        }
+        &.bg-orange {
+            background-color: orangered;
+        }
+        &.bg-purple {
+            background-color: purple;
+        }
+    }
+
+    // contenedor boton principal
+    .show-btn {
+        text-align: center;
+        margin: 30px 0;
+
+        .btn-main {
+            background-color: seagreen;
+        }
+    }
+    
+    // Contenedor grupode botones
+    .container-btn {
+        display: none;
+        text-align: center;
+    
+        &.btn-ocult {
+            display: block;
+        }
+    
+        .btn-sky {
+            background-color: dodgerblue;
+        }
+    
+        .btn-orange {
+            background-color: orangered;
+        }
+        
+        .btn-purple {
+            background-color: purple;
+        }
+    }
+}
